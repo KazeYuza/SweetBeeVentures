@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Check Out</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Review the selected items you wish to purchase from Honey Treats All">
+        <meta name="keywords" content="Review, selected items, Honey Treats All, whis">
+        <meta name="author" content="Erik">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="Logo.png">
+    </head>
+    <body id="bodyo">
+        <div class="container">
+            <p><a href="Order.html">Order</a></p>
+            <h1>Welcome to Honey Treats All Online Store</h1>
+            <label>Selected Items:</label><br>
+            <label id="selected"></label><br><br>
+            <label>Delivery Information:</label><br>
+            <label id="delivery"></label><br><br>
+            <label>Order Summary:</label><br>
+            <label id="subtotal"></label><br>
+            <label id="cost"></label><br>
+            <label id="total"></label><br><br>
+            <p>(Please note do not enter your actual banking details since you won't be able to buy the product. <a href="Details.html">Learn more.</a>)</p>
+            <form id="payMent">
+                <label for="cardName">Name on Card: </label><br>
+                <input type="text" id="cardName" name="cardName" required><br>
+                <label for="cardNum">Card Number: </label><br>
+                <input type="text" id="cardNum" name="cardNum" pattern="\d{16}" required><br>
+                <label for="experationDate">Experation Date (MM/YY): </label><br>
+                <input type="text" id="experationDate" name="ExperationDate" pattern="\d{2}/\d{2}" required><br>
+                <label for="cvv">CVV: </label><br>
+                <input type="text" id="cvv" name="cvv" pattern="\d{3}" required><br><br>
+                <button type="submit">Submit Payment</button><br>
+                <label id="error-message"></label>
+            </form>
+            <script src="CheckOut.js"></script>
+        </div>
+    </body>
+</html>

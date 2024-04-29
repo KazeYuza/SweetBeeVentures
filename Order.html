@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Order</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Shop for the purest honey in the form you want it">
+		<meta name="keywords" content="honey, shop, honey treats all online store, pure honey">
+		<meta name="author" content="Erik">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" type="image/x-icon" href="Logo.png">
+    </head>
+    <body id="bodyo">
+        <div class="container">
+            <a href="BusinessInfo.html">Selling Honey</a>
+            <h1>Welcome to Honey Treats All Online Store</h1>
+			<h2>Honey Availability and Pricing:</h2>
+			<p>
+				Choose the prefect size of honey bucket to suit your needs and enjoy the natural goodness of pure honey from Honey Treats All.
+			</p>
+			<table>
+				<tr>
+					<th>Bucket size</th>
+					<th>Amount availible</th>
+					<th>Prize</th>
+				</tr>
+				<tr>
+					<td>300ml</td>
+					<td id="300ml"></td>
+					<td>R30.00</td>
+				</tr>
+				<tr>
+					<td>500ml</td>
+					<td id="500ml"></td>
+					<td>R50.00</td>
+				</tr>
+				<tr>
+					<td>750ml</td>
+					<td id="750ml"></td>
+					<td>R70.50</td>
+				</tr>
+				<tr>
+					<td>1L</td>
+					<td id="1L"></td>
+					<td>R100.00</td>
+				</tr>
+				<tr>
+					<td>1.5L</td>
+					<td id="1.5L"></td>
+					<td>R150.50</td>
+				</tr>
+				<tr>
+					<td>2L</td>
+					<td id="2L"></td>
+					<td>R200.00</td>
+				</tr>
+			</table>
+			<p><a href="Falidate.html">Edit table</a></p>
+			<form id="buyForm">
+				<div class="radio-container">
+					<label>Select Your Preferred Honey Bucket Size:</label><br>
+					<input type="radio" name="bucket-size" value="300ml" required> 300ml<br>
+					<input type="radio" name="bucket-size" value="500ml"> 500ml<br>
+					<input type="radio" name="bucket-size" value="750ml"> 750ml<br>
+					<input type="radio" name="bucket-size" value="1L"> 1L<br>
+					<input type="radio"	name="bucket-size" value="1.5L"> 1.5L<br>
+					<input type="radio" name="bucket-size" value="2L"> 2L<br>
+
+					<div class="quantity-input">
+						<label for="quantity">Enter the quantity of buckets you wish to purchase:</label><br>
+						<input type="number" id="quantity" name="quantity" min="1" value="1" required><br><br>
+
+						<div class="location-input">
+							<label for="location">Enter the dellivery destination:(Only in Potchefstroom at the moment.)</label><br>
+							<input type="text" id="location" name="location"><br>
+						</div>
+					</div><br>
+					<button type="submit">Add to Cart</button>
+				</div>
+			</form>
+			<h2>Shopping Cart:</h2>
+			<div id="loading-spinner" class="hidden">
+				<p>Loading...</p>
+			</div>
+			<label id="subtotal">Subtotal:</label><br>
+			<label id="delivery">Delivery:</label><br>
+			<label id="total">Total:</label><br>
+			<label id="error-message"></label><br>
+			<label>(Please note that you will not be able to buy any products since we arent a real busnisse at the time beeing we will keep you updated when we will be of use. 
+				<a href="Details.html">Learn more.</a>)</label>
+			<form id="checkOut">
+				<button id="Checkout">Proceed to Checkout</button>
+			</form>			
+			<h2>Customer Comment:</h2>
+			<form id="testimonialForm">
+				<label for="name">Name:</label><br>
+				<input type="text" id="name" name="name" required><br>
+				<label for="testimonial">Comment:</label><br>
+				<textarea id="testimonial" name="testimonial" required></textarea><br>
+				<label for="rating">Rating:</label><br>
+				<input type="number" id="rating" name="rating" min="0" max="5" step="0.1" required><br><br>
+				<button type="submit">Submit Comment</button>
+			</form>
+			<div id="testimonials"></div>
+			<script src="Order.js"></script>
+        </div>
+    </body>
+</html>

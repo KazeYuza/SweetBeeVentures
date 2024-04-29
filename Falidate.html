@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LogIn</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Log In to change table content">
+        <meta name="keywords" content="login, table content, change">
+        <meta name="author" content="Erik">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="Logo.png">
+    </head>
+    <body id="bodyo">
+        <div class="cContainer">
+            <p><a href="Order.html">Order</a></p>
+            <h1>Welcome to the login page</h1>
+            <h3>Only admins can login and edit the table content</h3>
+            <form id="falidate">
+                <label for="userName">Username:</label><br>
+                <input type="text" id="userName" name="userName" required><br>
+                <label for="passWord">Password:</label><br>
+                <input type="password" id="passWord" name="passWord" required><br>
+                <label id="error-message"></label><br>
+                <button>Submit</button>
+            </form>
+            <script src="Falidate.js"></script>
+        </div>
+    </body>
+</html>

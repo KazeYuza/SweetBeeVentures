@@ -1,0 +1,118 @@
+#bodym{
+    background-image: url("Farm.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#bodyb{
+    background-image: url("Bee.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#bodyk{
+    background-image: url("BeeFarm.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#bodyr{
+    background-image: url("Beeremoval.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#bodyh{
+    background-image: url("Honey.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#bodyc{
+    background-image: url("Extraction.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#bodyo{
+    background-image: url("HoneyGoods.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#image{
+    max-width: 100%;
+    max-height: 100%;
+}
+table{
+    max-width: 800px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th{
+    background: rgb(255, 255, 0);
+}
+tr{
+    background: #FFFD74;
+}
+th, td{
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+.edit{
+    border: none;
+    background: #FFFD74;
+    outline-width: 0;
+}
+.container{
+    max-width: 800px;
+    margin-right: auto;
+    padding: 20px;
+    background: rgba(153, 205, 50, 0.459);
+}
+.cContainer{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(153, 205, 50, 0.459);
+}
+.quantity-input{
+    margin-top: 10px;
+}
+
+#loading-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 9999;
+}
+.hidden {
+    display: none;
+}
+
+#testimonials {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-top: 10px;
+    background: #fffd74bd;
+}
+.testimonial h3 {
+    margin-top: 0;
+}
+.testimonial p {
+    margin-bottom: 0;
+}
